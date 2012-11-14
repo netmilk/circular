@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="cs">
+  <head>
+    <title>Virtualmaster</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="https://www.virtualmaster.com/wp-content/themes/virtualmasters_0.3/images/ico.png"/>
+    <%= stylesheet_link_tag application,'application.css' %>
+  </head>
+
+  <body ng-app="virtualmaster" data-twttr-rendered="true" class="page page-id-2583 page-template page-template-backend_dashboard-php logged-in">
+
+	<ng-include src="'<%=application%>/menu.html'" ng-controller="MenuController"></ng-include>
+	<ng-include src="'<%=application%>/submenu.html'" ng-controller="SubmenuController"></ng-include>
+  <ng-include src="'<%=application%>/breadcrumbs.html'" ng-controller="BreadcrumbsController"></ng-include>
+	<div class="container">
+		<div class="row">
+			<ng-view></ng-view>
+		</div>
+	</div>
+    <div class="arround_bottom">
+    </div>
+    <%= javascript_include_tag application, "application.js"%>
+  </body>
+</html>
