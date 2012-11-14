@@ -1,0 +1,3 @@
+[submodule "apps/circular"]
+	path = apps/circular
+	url = git@github.com:n1k/circular-angular.git
