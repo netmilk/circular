@@ -9,3 +9,6 @@ gem "coffee-script"
 gem "sprockets"
 gem "json"
 
+group :development do
+  gem 'shotgun'
+end
